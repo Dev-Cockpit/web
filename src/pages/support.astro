@@ -2,13 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import GitHubIssueForm from '../components/GitHubIssueForm';
-import { Mail, MessageCircle, Book, Bug, HelpCircle, Clock, Github } from 'lucide-astro';
+import { Mail, MessageCircle, Book, Bug, HelpCircle, Clock } from 'lucide-astro';
 
 // Get environment variables
 const githubOwner = import.meta.env.PUBLIC_GITHUB_OWNER || 'devcockpit';
 const githubRepo = import.meta.env.PUBLIC_GITHUB_SUPPORT_REPO || 'support';
-const githubToken = import.meta.env.GITHUB_PAT; // Required for private repos
-const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY; // For sending confirmation emails
+const githubToken = import.meta.env.GITHUB_PAT; 
+const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY; 
 ---
 
 <Layout 
@@ -115,7 +115,6 @@ const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY; // For sending confi
         <div class="lg:col-span-2">
           <div class="glass-dark rounded-2xl p-8">
             <div class="flex items-center gap-3 mb-6">
-              <Github className="w-6 h-6 text-primary-400" />
               <h2 class="text-2xl font-semibold">Create Support Ticket</h2>
             </div>
             <p class="text-gray-400 mb-6">
