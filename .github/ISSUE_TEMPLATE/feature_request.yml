@@ -1,0 +1,88 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Dev Cockpit
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! We love hearing ideas from our users.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Area
+      description: Which part of Dev Cockpit would this enhance?
+      options:
+        - Homebrew Management
+        - Docker Dashboard
+        - System Monitor
+        - Network Tools
+        - Git Repository Manager
+        - New Feature Area
+        - Settings & Preferences
+        - UI/UX Improvement
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Describe the problem or limitation you're facing
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: I would like to be able to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this feature to you?
+      options:
+        - Critical - I cannot use the app without it
+        - High - It would significantly improve my workflow
+        - Medium - It would be nice to have
+        - Low - Just a suggestion
+      default: 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe how you would use this feature in your daily workflow
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or Examples
+      description: If you have any mockups, examples, or references, please share them
+      placeholder: Drag and drop images or paste links here
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I'm willing to help test this feature
+        - label: I'm willing to provide more details if needed

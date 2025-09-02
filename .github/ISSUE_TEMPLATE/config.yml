@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📧 Email Support
+    url: mailto:support@devcockpit.app
+    about: For urgent or private matters, contact us directly
+  - name: 📖 Documentation
+    url: https://devcockpit.app/docs
+    about: Check our documentation for guides and tutorials
+  - name: ❓ FAQ
+    url: https://devcockpit.app/#faq
+    about: Find answers to frequently asked questions
+  - name: 🍎 Mac App Store
+    url: https://apps.apple.com/app/dev-cockpit
+    about: Download or review Dev Cockpit on the App Store

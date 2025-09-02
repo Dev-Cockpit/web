@@ -16,7 +16,8 @@
     "lucide-astro": "^0.539.0",
     "lucide-react": "^0.539.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "resend": "^6.0.2"
   },
   "devDependencies": {
     "@astrojs/react": "^4.3.0",

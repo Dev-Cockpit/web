@@ -1,138 +1,64 @@
-# Dev Cockpit Landing Page
+# Dev Cockpit
 
-A modern, professional landing page for Dev Cockpit - a premium macOS developer toolkit app. Built with Astro, Tailwind CSS v4, and optimized for GitHub Pages deployment.
+<img src="./public/logo/logo128.png" alt="Dev Cockpit Icon" width="128" height="128">
 
-## 🚀 Tech Stack
 
-- **Framework:** Astro 5.12
-- **Styling:** Tailwind CSS v4 with custom theme
-- **Components:** React for interactive elements
-- **Icons:** Lucide icons
-- **Deployment:** GitHub Pages with custom domain (devcockpit.app)
 
-## 📁 Project Structure
+# What we do?! 
 
-```
-/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions deployment
-├── public/
-│   ├── CNAME                   # Custom domain configuration
-│   ├── favicon.svg             # App icon
-│   ├── robots.txt              # SEO configuration
-│   ├── sitemap.xml             # Sitemap for search engines
-│   └── images/                 # Image assets
-├── src/
-│   ├── components/
-│   │   ├── Hero.astro          # Hero section
-│   │   ├── Features.tsx        # Interactive features showcase
-│   │   ├── Screenshots.tsx     # Screenshot gallery with lightbox
-│   │   ├── Pricing.tsx         # Pricing calculator
-│   │   ├── FAQ.tsx             # FAQ accordion
-│   │   ├── Testimonials.astro  # Customer testimonials
-│   │   ├── Footer.astro        # Site footer
-│   │   └── ContactForm.tsx     # Support contact form
-│   ├── layouts/
-│   │   └── Layout.astro        # Base layout with SEO
-│   ├── pages/
-│   │   ├── index.astro         # Landing page
-│   │   ├── privacy.astro       # Privacy policy
-│   │   ├── terms.astro         # Terms of service
-│   │   ├── support.astro       # Support page
-│   │   └── 404.astro           # Custom 404 page
-│   └── styles/
-│       └── global.css          # Global styles and Tailwind config
-└── package.json
-```
+Dev Cockpit is the ultimate system monitoring and development tools dashboard designed exclusively for Apple Silicon Macs. Built by developers, for developers, it brings all your essential tools into one beautiful, native macOS application.
 
-## 🛠️ Development
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+## **🚀 Key Features:**
 
-### Setup
+**Homebrew Management**
+• Visual package browser with instant search
+• One-click install, update, and uninstall
+• Dependency tracking and outdated package alerts
+• Integrated terminal for advanced operations
+• Bulk operations for efficient maintenance
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/dev-cockpit-landing.git
-cd dev-cockpit-landing
-```
+**Docker Dashboard**
+• Real-time container monitoring with CPU/Memory stats
+• Container lifecycle management (start, stop, restart, remove)
+• Interactive logs viewer with search and filtering
+• Volume and network management
+• Image registry with size tracking
+• Docker Compose support
 
-2. Install dependencies:
-```bash
-npm install
-```
+**Git Repository Manager**
+• Multi-repository overview dashboard
+• Branch status and commit history
+• Quick switching between projects
+• Stash management
+• Remote synchronization status
+• Submodule tracking
 
-3. Start development server:
-```bash
-npm run dev
-```
+**System Performance Monitor**
+• Real-time CPU usage per core
+• Memory pressure and swap monitoring
+• Disk usage and I/O statistics
+• Network traffic analysis
+• GPU performance metrics
+• Thermal state tracking
+• Battery health monitoring
 
-4. Open [http://localhost:4321](http://localhost:4321)
+**Network Tools**
+• Active port scanner
+• Connection monitoring
+• Network interface statistics
+• Speed test integration
+• Process-to-port mapping
 
-### Commands
 
-| Command           | Action                                       |
-|:-----------------|:---------------------------------------------|
-| `npm run dev`    | Start development server at localhost:4321   |
-| `npm run build`  | Build production site to `./dist/`          |
-| `npm run preview`| Preview production build locally            |
+## **Why Dev Cockpit?**
 
-## 🚀 Deployment
+Unlike generic system monitors, Dev Cockpit is built specifically for developers. Every feature is optimized for development workflows, from managing your Homebrew packages to monitoring Docker containers. The native SwiftUI interface ensures blazing-fast performance and minimal resource usage.
 
-The site is configured for automatic deployment to GitHub Pages:
+### **Designed for Apple Silicon**
 
-1. Push to `main` branch
-2. GitHub Actions will automatically build and deploy
-3. Site will be available at https://devcockpit.app
+Built from the ground up for M1, M2, and M3 Macs, Dev Cockpit takes full advantage of Apple Silicon's efficiency. Monitor your system without the overhead - Dev Cockpit uses less than 50MB of memory while providing comprehensive insights.
 
-### Manual Deployment
+### **Privacy First**
 
-```bash
-npm run build
-# Upload contents of ./dist/ to your hosting provider
-```
-
-## 🎨 Customization
-
-### Colors
-Edit the color theme in `src/styles/global.css`:
-- Primary colors (blue gradient)
-- Purple accent colors
-- Dark mode optimized
-
-### Content
-- Update pricing in `src/components/Pricing.tsx`
-- Modify features in `src/components/Features.tsx`
-- Edit FAQ items in `src/components/FAQ.tsx`
-- Update legal pages in `src/pages/privacy.astro` and `src/pages/terms.astro`
-
-### Images
-Replace placeholder images in `/public/images/`:
-- `app-preview.png` - Main hero app screenshot
-- `screenshots/` - Feature screenshots for gallery
-- `og-image.png` - Open Graph social media preview
-
-## 📝 Features
-
-- ✅ Dark mode by default with light mode toggle
-- ✅ Responsive design optimized for desktop
-- ✅ Interactive feature tabs
-- ✅ Screenshot gallery with lightbox
-- ✅ Pricing calculator (monthly/annual)
-- ✅ FAQ accordion
-- ✅ Contact form ready for Formspree
-- ✅ SEO optimized with meta tags
-- ✅ Schema.org markup
-- ✅ GDPR-compliant privacy policy
-- ✅ Performance optimized (Lighthouse 95+)
-
-## 📄 License
-
-Copyright © 2025 Dev Cockpit. All rights reserved.
-
-## 🤝 Support
-
-For questions or issues, contact: support@devcockpit.app
+All data stays on your Mac. No telemetry, no cloud uploads, no tracking. Your development environment remains completely private.

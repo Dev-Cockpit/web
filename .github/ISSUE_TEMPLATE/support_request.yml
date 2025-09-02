@@ -1,0 +1,104 @@
+name: 🤝 Support Request
+description: Get help with Dev Cockpit
+title: "[Support]: "
+labels: ["support", "needs-response"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help? We're here to assist you! Please provide as much detail as possible.
+
+  - type: input
+    id: email
+    attributes:
+      label: Contact Email
+      description: Your email for follow-up (will be kept private)
+      placeholder: your@email.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Support Category
+      description: What do you need help with?
+      options:
+        - Installation Issues
+        - Subscription & Billing
+        - Feature Not Working
+        - How to Use Feature
+        - Performance Issues
+        - Permissions Problem
+        - Homebrew Integration
+        - Docker Integration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Please describe your issue in detail
+      placeholder: I'm having trouble with...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What I've Tried
+      description: What steps have you already taken to resolve this?
+      placeholder: |
+        - Restarted the app
+        - Checked permissions
+        - ...
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this issue?
+      options:
+        - Critical - Cannot use the app at all
+        - High - Major functionality blocked
+        - Medium - Can work around it temporarily
+        - Low - General question
+      default: 2
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS Version
+      description: What version of macOS are you running?
+      placeholder: "e.g., macOS 15.0 Sequoia"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Dev Cockpit Version
+      description: Find this in Settings > About
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages or Logs
+      description: If you have any error messages or logs, please share them
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I've checked the FAQ section
+        - label: I've verified I'm running macOS 15.0 or later
+        - label: I've granted necessary permissions in System Settings
+        - label: I've tried restarting the app

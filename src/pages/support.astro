@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
-import ContactForm from '../components/ContactForm';
-import { Mail, MessageCircle, Book, Bug, HelpCircle, Clock } from 'lucide-astro';
+import GitHubIssueForm from '../components/GitHubIssueForm';
+import { Mail, MessageCircle, Book, Bug, HelpCircle, Clock, Github } from 'lucide-astro';
 
-// Get the access key from environment variable
-const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE';
+// Get environment variables
+const githubOwner = import.meta.env.PUBLIC_GITHUB_OWNER || 'devcockpit';
+const githubRepo = import.meta.env.PUBLIC_GITHUB_SUPPORT_REPO || 'support';
+const githubToken = import.meta.env.GITHUB_PAT; // Required for private repos
+const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY; // For sending confirmation emails
 ---
 
 <Layout 
@@ -73,7 +76,7 @@ const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KE
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-                Apple Silicon or Intel Mac
+                Apple Silicon ONLY
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 bg-green-400 rounded-full"></span>
@@ -108,11 +111,23 @@ const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KE
           </div>
         </div>
 
-        <!-- Contact Form -->
+        <!-- Support Ticket Form -->
         <div class="lg:col-span-2">
           <div class="glass-dark rounded-2xl p-8">
-            <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
-            <ContactForm client:load accessKey={accessKey} />
+            <div class="flex items-center gap-3 mb-6">
+              <Github className="w-6 h-6 text-primary-400" />
+              <h2 class="text-2xl font-semibold">Create Support Ticket</h2>
+            </div>
+            <p class="text-gray-400 mb-6">
+              Submit your support request and we'll get back to you within 24-48 hours. You'll receive a confirmation email with your ticket details.
+            </p>
+            <GitHubIssueForm 
+              client:load 
+              githubOwner={githubOwner}
+              githubRepo={githubRepo}
+              githubToken={githubToken}
+              resendApiKey={resendApiKey}
+            />
           </div>
         </div>
       </div>
