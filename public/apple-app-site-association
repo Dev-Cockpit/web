@@ -1,0 +1,23 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.caioricciuti.devcockpit",
+        "paths": [
+          "/download",
+          "/app/*",
+          "/open/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAMID.com.caioricciuti.devcockpit"
+    ]
+  },
+  "appclips": {
+    "apps": []
+  }
+}

@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import ContactForm from '../components/ContactForm';
+import { Mail, MessageCircle, Book, Bug, HelpCircle, Clock } from 'lucide-astro';
+
+// Get the access key from environment variable
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE';
+---
+
+<Layout 
+  title="Support - Dev Cockpit"
+  description="Get help with Dev Cockpit. Contact our support team, browse documentation, or find answers to common questions."
+>
+  <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          How Can We <span class="gradient-text">Help You?</span>
+        </h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          We're here to help you get the most out of Dev Cockpit
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        <!-- Quick Links -->
+        <div class="lg:col-span-1 space-y-6">
+          <div class="glass rounded-2xl p-6">
+            <h2 class="text-xl font-semibold mb-4">Quick Resources</h2>
+            
+            <div class="space-y-4">
+              <a href="/#faq" class="flex items-start gap-3 group">
+                <div class="p-2 glass rounded-lg group-hover:bg-white/10 transition-colors">
+                  <HelpCircle className="w-5 h-5 text-primary-400" />
+                </div>
+                <div>
+                  <h3 class="font-medium group-hover:text-primary-400 transition-colors">FAQ</h3>
+                  <p class="text-sm text-gray-500">Find answers to common questions</p>
+                </div>
+              </a>
+              
+              <a href="#" class="flex items-start gap-3 group opacity-50 cursor-not-allowed">
+                <div class="p-2 glass rounded-lg">
+                  <Book className="w-5 h-5 text-primary-400" />
+                </div>
+                <div>
+                  <h3 class="font-medium">Documentation</h3>
+                  <p class="text-sm text-gray-500">Coming soon</p>
+                </div>
+              </a>
+              
+              <a href="mailto:support@devcockpit.app" class="flex items-start gap-3 group">
+                <div class="p-2 glass rounded-lg group-hover:bg-white/10 transition-colors">
+                  <Mail className="w-5 h-5 text-primary-400" />
+                </div>
+                <div>
+                  <h3 class="font-medium group-hover:text-primary-400 transition-colors">Email Support</h3>
+                  <p class="text-sm text-gray-500">support@devcockpit.app</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- System Requirements -->
+          <div class="glass rounded-2xl p-6">
+            <h2 class="text-xl font-semibold mb-4">System Requirements</h2>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                macOS 15.0 (Sequoia) or later
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                Apple Silicon or Intel Mac
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                4GB RAM minimum
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                100MB available storage
+              </li>
+            </ul>
+          </div>
+
+          <!-- Response Time -->
+          <div class="glass rounded-2xl p-6">
+            <h2 class="text-xl font-semibold mb-4">Response Times</h2>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-primary-400" />
+                <div>
+                  <p class="font-medium">Email Support</p>
+                  <p class="text-sm text-gray-500">Within 24-48 hours</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <Bug className="w-5 h-5 text-primary-400" />
+                <div>
+                  <p class="font-medium">Bug Reports</p>
+                  <p class="text-sm text-gray-500">Within 3-5 business days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-2">
+          <div class="glass-dark rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
+            <ContactForm client:load accessKey={accessKey} />
+          </div>
+        </div>
+      </div>
+
+      <!-- Troubleshooting Section -->
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-2xl font-semibold mb-6">Common Issues & Solutions</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold mb-2">App won't launch</h3>
+            <p class="text-gray-400 mb-4">
+              Make sure you're running macOS 15.0 or later. Try restarting your Mac and reinstalling the app from the Mac App Store.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-2">Subscription not recognized</h3>
+            <p class="text-gray-400 mb-4">
+              Go to Settings → Restore Purchases. Make sure you're signed in with the same Apple ID used for purchase.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-2">Homebrew packages not showing</h3>
+            <p class="text-gray-400 mb-4">
+              Ensure Homebrew is installed at /opt/homebrew (Apple Silicon) or /usr/local (Intel). Grant Dev Cockpit necessary permissions.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-2">Network monitoring not working</h3>
+            <p class="text-gray-400 mb-4">
+              Check System Settings → Privacy & Security → Network. Make sure Dev Cockpit has permission to monitor network.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cancel Subscription -->
+      <div class="mt-12 text-center p-8 glass rounded-2xl">
+        <h2 class="text-2xl font-semibold mb-4">Need to Cancel?</h2>
+        <p class="text-gray-400 mb-6">
+          We're sorry to see you go. You can cancel your subscription anytime through the Mac App Store.
+        </p>
+        <div class="inline-flex flex-col sm:flex-row gap-4 text-sm">
+          <div class="glass rounded-xl px-4 py-2">
+            1. Open Mac App Store
+          </div>
+          <div class="glass rounded-xl px-4 py-2">
+            2. Click your profile
+          </div>
+          <div class="glass rounded-xl px-4 py-2">
+            3. Manage Subscriptions
+          </div>
+          <div class="glass rounded-xl px-4 py-2">
+            4. Cancel Dev Cockpit
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

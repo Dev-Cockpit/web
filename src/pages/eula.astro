@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import { ChevronRight, FileText, Shield, Scale } from 'lucide-astro';
+---
+
+<Layout 
+  title="End User License Agreement - Dev Cockpit"
+  description="End User License Agreement (EULA) for Dev Cockpit macOS application. Terms and conditions for using our developer toolkit."
+>
+  <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm text-gray-400 mb-6">
+          <FileText className="w-4 h-4" />
+          <span>Legal Document</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          End User License Agreement
+        </h1>
+        <p class="text-xl text-gray-400">
+          Last Updated: January 1, 2025
+        </p>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="glass rounded-2xl p-6 mb-12">
+        <h2 class="text-lg font-semibold mb-4">Quick Navigation</h2>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <a href="#license-grant" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+            <ChevronRight className="w-4 h-4" />
+            <span>License Grant</span>
+          </a>
+          <a href="#restrictions" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+            <ChevronRight className="w-4 h-4" />
+            <span>Restrictions</span>
+          </a>
+          <a href="#subscription" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+            <ChevronRight className="w-4 h-4" />
+            <span>Subscription Terms</span>
+          </a>
+          <a href="#termination" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+            <ChevronRight className="w-4 h-4" />
+            <span>Termination</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-invert max-w-none">
+        <div class="glass rounded-2xl p-8 mb-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="p-2 glass rounded-lg">
+              <Shield className="w-6 h-6 text-primary-400" />
+            </div>
+            <h2 class="text-2xl font-bold m-0">Important - Read Carefully</h2>
+          </div>
+          <p class="text-gray-300">
+            This End User License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and Dev Cockpit ("Developer") for the Dev Cockpit software application ("Software").
+          </p>
+          <p class="text-gray-300">
+            By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, do not install or use the Software.
+          </p>
+        </div>
+
+        <section id="license-grant" class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">1. Grant of License</h2>
+          
+          <h3 class="text-xl font-semibold mb-3">Installation and Use</h3>
+          <p class="text-gray-300 mb-4">
+            Developer grants you the right to install and use copies of the Software on any device you own or control, provided that:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>You have purchased a valid subscription through the Apple App Store</li>
+            <li>Your subscription remains active and in good standing</li>
+            <li>You comply with all terms of this Agreement</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mb-3 mt-6">Subscription Requirement</h3>
+          <p class="text-gray-300">
+            The Software requires an active subscription to function. Features may be limited or disabled without a valid subscription.
+          </p>
+        </section>
+
+        <section id="restrictions" class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">2. Description of Other Rights and Limitations</h2>
+          
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Maintenance of Copyright Notices</h3>
+              <p class="text-gray-300">You may not remove or alter any copyright notices on any copies of the Software.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Distribution</h3>
+              <p class="text-gray-300">You may not distribute copies of the Software to third parties.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Prohibition on Reverse Engineering</h3>
+              <p class="text-gray-300">You may not reverse engineer, decompile, or disassemble the Software.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Rental</h3>
+              <p class="text-gray-300">You may not rent, lease, or lend the Software.</p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Support Services</h3>
+              <p class="text-gray-300">
+                Developer may provide you with support services related to the Software. Any supplemental software code provided to you as part of support services shall be considered part of the Software and subject to the terms of this Agreement.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Compliance with Applicable Laws</h3>
+              <p class="text-gray-300">You must comply with all applicable laws regarding use of the Software.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="subscription" class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">3. Subscription Terms</h2>
+          
+          <h3 class="text-xl font-semibold mb-3">Billing</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
+            <li>Subscriptions are billed through the Apple App Store</li>
+            <li>Monthly subscription: €9.99 per month</li>
+            <li>Annual subscription: €99.00 per year</li>
+            <li>Prices may vary by region</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mb-3">Free Trial</h3>
+          <p class="text-gray-300 mb-4">
+            New users are eligible for a 14-day free trial. The trial will automatically convert to a paid subscription unless cancelled before the trial period ends.
+          </p>
+
+          <h3 class="text-xl font-semibold mb-3">Renewal and Cancellation</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Subscriptions automatically renew unless cancelled</li>
+            <li>Cancellation must be done through App Store account settings</li>
+            <li>No refunds for partial subscription periods</li>
+          </ul>
+        </section>
+
+        <section id="termination" class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">4. Termination</h2>
+          <p class="text-gray-300 mb-4">
+            Without prejudice to any other rights, Developer may terminate this Agreement if you fail to comply with the terms and conditions. In such event, you must destroy all copies of the Software and all of its component parts.
+          </p>
+        </section>
+
+        <section class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">5. Copyright</h2>
+          <p class="text-gray-300">
+            All title and copyrights in and to the Software (including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the Software), and any copies of the Software are owned by the Developer. The Software is protected by copyright laws and international treaty provisions.
+          </p>
+        </section>
+
+        <section class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">6. No Warranties</h2>
+          <p class="text-gray-300 mb-4">
+            Developer expressly disclaims any warranty for the Software. The Software and any related documentation is provided "as is" without warranty of any kind, either express or implied, including, without limitation, the implied warranties or merchantability, fitness for a particular purpose, or non-infringement.
+          </p>
+        </section>
+
+        <section class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">7. Limitation of Liability</h2>
+          <p class="text-gray-300">
+            In no event shall Developer be liable for any damages (including, without limitation, lost profits, business interruption, or lost information) arising out of your use of or inability to use the Software, even if Developer has been advised of the possibility of such damages. In no event will Developer's total liability exceed the amount paid by you for the Software.
+          </p>
+        </section>
+
+        <section class="glass rounded-2xl p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-4">8. Governing Law</h2>
+          <p class="text-gray-300">
+            This Agreement shall be governed by the laws of the jurisdiction in which the Developer resides, without regard to its conflict of law provisions. You agree to submit to the personal and exclusive jurisdiction of the courts located within the Developer's jurisdiction.
+          </p>
+        </section>
+
+        <section class="glass rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="p-2 glass rounded-lg">
+              <Scale className="w-6 h-6 text-primary-400" />
+            </div>
+            <h2 class="text-2xl font-bold m-0">Contact Information</h2>
+          </div>
+          <p class="text-gray-300">
+            If you have any questions about this Agreement, please contact us at:
+          </p>
+          <div class="mt-4 space-y-2">
+            <p class="text-gray-300">
+              <strong>Email:</strong> <a href="mailto:support@devcockpit.app" class="text-primary-400 hover:text-primary-300">support@devcockpit.app</a>
+            </p>
+            <p class="text-gray-300">
+              <strong>Website:</strong> <a href="https://devcockpit.app" class="text-primary-400 hover:text-primary-300">https://devcockpit.app</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

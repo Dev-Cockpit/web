@@ -1,0 +1,303 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide-astro';
+---
+
+<Layout 
+  title="Download Dev Cockpit - Mac App Store"
+  description="Download Dev Cockpit from the Mac App Store. Premium developer toolkit for macOS with 14-day free trial."
+>
+  <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm text-primary-400 mb-6">
+          <Sparkles className="w-4 h-4" />
+          <span>Coming September 2025</span>
+        </div>
+        <h1 class="text-5xl sm:text-6xl font-bold mb-6">
+          Get <span class="gradient-text">Dev Cockpit</span> Today
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+          Transform your development workflow with the ultimate macOS toolkit designed for Apple Silicon
+        </p>
+        
+        <!-- Download Button -->
+        <div class="flex flex-col items-center gap-4">
+          <a 
+            href="#" 
+            class="inline-flex items-center gap-3 px-8 py-4 glass-card rounded-2xl hover:scale-105 transition-transform cursor-not-allowed opacity-75"
+            onclick="return false;"
+          >
+            <Apple className="w-8 h-8" />
+            <div class="text-left">
+              <div class="text-xs text-gray-400">Download on the</div>
+              <div class="text-xl font-semibold">Mac App Store</div>
+            </div>
+          </a>
+          <p class="text-sm text-gray-500">Available September 2025</p>
+        </div>
+      </div>
+
+      <!-- Trial Info -->
+      <div class="glass rounded-3xl p-8 mb-12">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex items-start gap-4">
+            <div class="p-3 glass rounded-xl">
+              <Calendar className="w-6 h-6 text-primary-400" />
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">14-Day Free Trial</h3>
+              <p class="text-gray-400">
+                Try all Pro features risk-free. No credit card required to start your trial.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 glass rounded-xl">
+              <Shield className="w-6 h-6 text-primary-400" />
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Cancel Anytime</h3>
+              <p class="text-gray-400">
+                Manage your subscription directly through the App Store. Cancel whenever you want.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Requirements -->
+      <div class="glass rounded-3xl p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">System Requirements</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold mb-3 text-primary-400">Minimum Requirements</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">macOS 14.0 (Sonoma) or later</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">Apple Silicon Mac (M1, M2, M3)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">8GB RAM</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">100MB available storage</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-3 text-primary-400">Recommended</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">macOS 15.0 (Sequoia) or later</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">M2 Pro/Max or M3 Pro/Max</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">16GB RAM or more</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span class="text-gray-300">External display support</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Steps -->
+      <div class="glass rounded-3xl p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">How to Install</h2>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full gradient-primary flex items-center justify-center font-bold">
+              1
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Open Mac App Store</h3>
+              <p class="text-gray-400">Launch the Mac App Store on your Mac</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full gradient-primary flex items-center justify-center font-bold">
+              2
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Search for Dev Cockpit</h3>
+              <p class="text-gray-400">Type "Dev Cockpit" in the search bar</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full gradient-primary flex items-center justify-center font-bold">
+              3
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Click Get or Install</h3>
+              <p class="text-gray-400">Download the app to your Mac</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full gradient-primary flex items-center justify-center font-bold">
+              4
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Launch & Start Trial</h3>
+              <p class="text-gray-400">Open Dev Cockpit and begin your 14-day free trial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What's Included -->
+      <div class="glass rounded-3xl p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">What's Included</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-3">Free Features</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Basic system monitoring</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>View 5 Docker containers</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Homebrew package list</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Network interface stats</span>
+              </li>
+            </ul>
+          </div>
+          <div class="glass rounded-xl p-6 border border-primary-500/20">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-lg font-semibold">Pro Monthly</h3>
+              <span class="text-primary-400 font-bold">€9.99/mo</span>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Everything in Free</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Unlimited Docker monitoring</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Advanced Homebrew tools</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Priority support</span>
+              </li>
+            </ul>
+          </div>
+          <div class="glass rounded-xl p-6 border border-purple-500/20">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-lg font-semibold">Pro Annual</h3>
+              <span class="text-purple-400 font-bold">€99/year</span>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Everything in Pro Monthly</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Save 17% annually</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Early access to features</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Custom themes</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pre-Launch Notification -->
+      <div class="glass rounded-3xl p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Get Notified When We Launch</h2>
+        <p class="text-gray-400 mb-6">
+          Be the first to know when Dev Cockpit is available on the Mac App Store
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="flex-1 px-4 py-3 glass rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500"
+          />
+          <button class="cta-button">
+            <span>Notify Me</span>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4">
+          We'll only email you once when the app launches. No spam, ever.
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    background: linear-gradient(to right, #3b82f6, #a855f7);
+  }
+
+  .cta-button:hover {
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.25);
+    transform: scale(1.05);
+  }
+
+  .glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-primary {
+    background: linear-gradient(to bottom right, #3b82f6, #2563eb);
+  }
+</style>

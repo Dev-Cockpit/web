@@ -1,0 +1,394 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import { Book, PlayCircle, Terminal, Settings, Package, GitBranch, Network, HelpCircle } from 'lucide-astro';
+---
+
+<Layout 
+  title="Documentation - Dev Cockpit"
+  description="Get started with Dev Cockpit. Learn how to use Homebrew management, Docker monitoring, and system tools."
+>
+  <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm text-gray-400 mb-6">
+          <Book className="w-4 h-4" />
+          <span>Documentation</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          Getting Started with <span class="gradient-text">Dev Cockpit</span>
+        </h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          Everything you need to know to get the most out of your developer toolkit
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-4 gap-8">
+        <!-- Sidebar Navigation -->
+        <div class="lg:col-span-1">
+          <div class="glass rounded-2xl p-6 sticky top-24">
+            <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+            <nav class="space-y-2">
+              <a href="#getting-started" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Getting Started
+              </a>
+              <a href="#homebrew" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Homebrew Management
+              </a>
+              <a href="#docker" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Docker Monitoring
+              </a>
+              <a href="#git" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Git Repositories
+              </a>
+              <a href="#system" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                System Monitoring
+              </a>
+              <a href="#network" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Network Tools
+              </a>
+              <a href="#shortcuts" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                Keyboard Shortcuts
+              </a>
+              <a href="#faq-link" class="block px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+                FAQ
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="lg:col-span-3 space-y-12">
+          <!-- Getting Started -->
+          <section id="getting-started" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <PlayCircle className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Getting Started</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <h3 class="text-xl font-semibold mb-3">Installation</h3>
+              <ol class="list-decimal list-inside space-y-2 text-gray-300 mb-6">
+                <li>Download Dev Cockpit from the Mac App Store</li>
+                <li>Launch the app and grant necessary permissions when prompted</li>
+                <li>Start your 14-day free trial or enter your subscription</li>
+                <li>Configure your preferences in Settings</li>
+              </ol>
+
+              <h3 class="text-xl font-semibold mb-3">First Launch</h3>
+              <p class="text-gray-300 mb-4">
+                On first launch, Dev Cockpit will scan your system for:
+              </p>
+              <ul class="list-disc list-inside space-y-2 text-gray-300">
+                <li>Homebrew installation and packages</li>
+                <li>Docker Desktop installation and running containers</li>
+                <li>Git repositories in common locations</li>
+                <li>System resources and network interfaces</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Homebrew Management -->
+          <section id="homebrew" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <Package className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Homebrew Management</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <p class="text-gray-300 mb-4">
+                Manage all your Homebrew packages from a beautiful visual interface.
+              </p>
+
+              <h3 class="text-xl font-semibold mb-3">Features</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li><strong>Package Browser:</strong> Search and browse all available packages</li>
+                <li><strong>One-Click Install:</strong> Install packages without touching the terminal</li>
+                <li><strong>Update Management:</strong> See outdated packages and update them individually or in bulk</li>
+                <li><strong>Dependency Tracking:</strong> View package dependencies and dependents</li>
+                <li><strong>Cask Support:</strong> Manage GUI applications installed via Homebrew Cask</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Common Tasks</h3>
+              <div class="glass rounded-xl p-4 mb-4">
+                <p class="font-mono text-sm mb-2">Installing a Package:</p>
+                <p class="text-gray-400">Search → Select Package → Click Install</p>
+              </div>
+              <div class="glass rounded-xl p-4 mb-4">
+                <p class="font-mono text-sm mb-2">Updating All Packages:</p>
+                <p class="text-gray-400">Outdated Tab → Update All Button</p>
+              </div>
+              <div class="glass rounded-xl p-4">
+                <p class="font-mono text-sm mb-2">Removing a Package:</p>
+                <p class="text-gray-400">Installed Tab → Select Package → Uninstall</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Docker Monitoring -->
+          <section id="docker" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <Terminal className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Docker Monitoring</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <p class="text-gray-300 mb-4">
+                Monitor and manage your Docker containers with real-time statistics.
+              </p>
+
+              <h3 class="text-xl font-semibold mb-3">Container Management</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li><strong>Real-time Stats:</strong> CPU and memory usage for each container</li>
+                <li><strong>Lifecycle Control:</strong> Start, stop, restart, and remove containers</li>
+                <li><strong>Log Viewer:</strong> View and search container logs</li>
+                <li><strong>Port Mapping:</strong> See exposed ports and their mappings</li>
+                <li><strong>Volume Management:</strong> View and manage Docker volumes</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Image Management</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300">
+                <li>Browse local images with size information</li>
+                <li>Remove unused images to free up space</li>
+                <li>View image layers and history</li>
+                <li>Pull new images from Docker Hub</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Git Repositories -->
+          <section id="git" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <GitBranch className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Git Repositories</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <p class="text-gray-300 mb-4">
+                Keep track of all your Git repositories in one place.
+              </p>
+
+              <h3 class="text-xl font-semibold mb-3">Repository Overview</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li>View all repositories with their current branch</li>
+                <li>See uncommitted changes at a glance</li>
+                <li>Check sync status with remote</li>
+                <li>Quick access to repository folders</li>
+                <li>Stash management across projects</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Adding Repositories</h3>
+              <p class="text-gray-300 mb-4">
+                Dev Cockpit automatically scans common locations for Git repositories. You can also manually add repositories:
+              </p>
+              <ol class="list-decimal list-inside space-y-2 text-gray-300">
+                <li>Click the "+" button in the Git panel</li>
+                <li>Browse to your repository folder</li>
+                <li>Click "Add Repository"</li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- System Monitoring -->
+          <section id="system" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <Settings className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">System Monitoring</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <h3 class="text-xl font-semibold mb-3">CPU Monitoring</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li>Real-time usage per core</li>
+                <li>Performance and efficiency core distinction</li>
+                <li>Temperature monitoring</li>
+                <li>Process CPU usage ranking</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Memory Management</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li>Memory pressure visualization</li>
+                <li>Swap usage tracking</li>
+                <li>App memory consumption</li>
+                <li>Memory pressure history</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Storage & Network</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300">
+                <li>Disk usage and I/O statistics</li>
+                <li>Network interface monitoring</li>
+                <li>Bandwidth usage tracking</li>
+                <li>Connection statistics</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Network Tools -->
+          <section id="network" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <Network className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Network Tools</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none">
+              <h3 class="text-xl font-semibold mb-3">Port Scanner</h3>
+              <p class="text-gray-300 mb-4">
+                Scan for open ports on your system or remote hosts:
+              </p>
+              <ul class="list-disc list-inside space-y-2 text-gray-300 mb-6">
+                <li>Quick scan common ports</li>
+                <li>Custom port range scanning</li>
+                <li>Service detection</li>
+                <li>Process identification for local ports</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-3">Connection Monitor</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-300">
+                <li>View all active network connections</li>
+                <li>See which processes are using network</li>
+                <li>Monitor bandwidth per connection</li>
+                <li>Filter by protocol (TCP/UDP)</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Keyboard Shortcuts -->
+          <section id="shortcuts" class="glass rounded-2xl p-8">
+            <h2 class="text-2xl font-bold mb-6">Keyboard Shortcuts</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="text-lg font-semibold mb-3">General</h3>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Preferences</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘,</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Refresh</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘R</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Search</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘F</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Quit</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘Q</kbd>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-lg font-semibold mb-3">Navigation</h3>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Dashboard</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘1</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Homebrew</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘2</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Docker</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘3</kbd>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-400">Git</span>
+                    <kbd class="px-2 py-1 glass rounded text-sm">⌘4</kbd>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ Link -->
+          <section id="faq-link" class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 glass rounded-lg">
+                <HelpCircle className="w-6 h-6 text-primary-400" />
+              </div>
+              <h2 class="text-2xl font-bold">Need More Help?</h2>
+            </div>
+            
+            <p class="text-gray-300 mb-6">
+              Check out our frequently asked questions or contact support for additional assistance.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+              <a href="/#faq" class="cta-button-outline">
+                View FAQ
+              </a>
+              <a href="/support" class="cta-button">
+                Contact Support
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    background: linear-gradient(to right, #3b82f6, #a855f7);
+  }
+
+  .cta-button:hover {
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.25);
+    transform: scale(1.05);
+  }
+
+  .cta-button-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .cta-button-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+</style>

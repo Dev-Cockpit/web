@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Privacy Policy - Dev Cockpit"
+  description="Dev Cockpit privacy policy. Learn how we protect your data and respect your privacy."
+>
+  <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold mb-8">Privacy Policy</h1>
+      <p class="text-gray-400 mb-8">Last updated: September 1, 2025</p>
+      
+      <div class="prose prose-invert max-w-none space-y-6">
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+          <p class="text-gray-300">
+            Dev Cockpit is committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information when you use our macOS application.
+          </p>
+          <p class="text-gray-300 font-semibold mt-4">
+            The most important thing to know: Dev Cockpit does not collect, store, or transmit any personal data. All operations run locally on your Mac.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Information We Do NOT Collect</h2>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Personal identification information</li>
+            <li>Usage data or analytics</li>
+            <li>System information or diagnostics</li>
+            <li>Network traffic or port scanning results</li>
+            <li>Homebrew package information</li>
+            <li>Any data processed by the app</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Local Processing</h2>
+          <p class="text-gray-300">
+            All features of Dev Cockpit operate entirely on your local machine:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+            <li>Homebrew package management runs through local Homebrew installation</li>
+            <li>Port scanning analyzes only local network interfaces</li>
+            <li>Network monitoring tracks only local network activity</li>
+            <li>AI analysis uses Apple Intelligence on-device processing</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Subscription Management</h2>
+          <p class="text-gray-300">
+            Subscriptions are managed entirely through the Mac App Store. We do not have access to your payment information or Apple ID. Apple's privacy policy governs the collection and use of your information in connection with your App Store purchases.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Third-Party Services</h2>
+          <p class="text-gray-300">
+            Dev Cockpit does not integrate with any third-party analytics, tracking, or advertising services. The app may interact with:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+            <li><strong>Homebrew:</strong> For package management (runs locally)</li>
+            <li><strong>Apple Intelligence:</strong> For AI features (on-device processing)</li>
+            <li><strong>Mac App Store:</strong> For subscription management</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Data Security</h2>
+          <p class="text-gray-300">
+            Since Dev Cockpit doesn't collect or transmit data, there's no risk of your information being intercepted or breached. All app operations remain within your local environment, protected by macOS security features.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Children's Privacy</h2>
+          <p class="text-gray-300">
+            Dev Cockpit is a developer tool intended for professional use. We do not knowingly market to or collect information from children under 13.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">GDPR Compliance</h2>
+          <p class="text-gray-300">
+            Dev Cockpit is fully GDPR compliant by design:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+            <li>No personal data collection means no data to request, modify, or delete</li>
+            <li>No data processing means no consent required</li>
+            <li>No data storage means no retention policies needed</li>
+            <li>No data transfer means no international transfer concerns</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">California Privacy Rights</h2>
+          <p class="text-gray-300">
+            Under the California Consumer Privacy Act (CCPA), California residents have specific rights regarding their personal information. Since Dev Cockpit does not collect personal information, these rights are inherently protected.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Changes to This Policy</h2>
+          <p class="text-gray-300">
+            We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date. Continued use of Dev Cockpit after changes constitutes acceptance of the updated policy.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+          <p class="text-gray-300">
+            If you have questions about this Privacy Policy or Dev Cockpit's privacy practices, please contact us:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+            <li>Email: <a href="mailto:privacy@devcockpit.app" class="text-primary-400 hover:text-primary-300">privacy@devcockpit.app</a></li>
+            <li>Website: <a href="/support" class="text-primary-400 hover:text-primary-300">devcockpit.app/support</a></li>
+          </ul>
+        </section>
+
+        <section class="mt-12 p-6 glass rounded-xl">
+          <p class="text-center text-gray-400">
+            <strong class="text-white">Your privacy is our priority.</strong><br />
+            Dev Cockpit: 100% local, 0% tracking.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

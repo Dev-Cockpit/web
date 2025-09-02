@@ -1,0 +1,14 @@
+# app-ads.txt for Dev Cockpit
+# Apple Search Ads Attribution
+
+# Apple Inc.
+apple.com, 12345678, DIRECT
+
+# This file helps verify ownership of the Dev Cockpit app
+# for Apple Search Ads attribution and prevents ad fraud.
+# 
+# Bundle ID: com.caioricciuti.devcockpit
+# App Store ID: [TO BE FILLED AFTER APP STORE SUBMISSION]
+#
+# For more information, visit:
+# https://developer.apple.com/documentation/ad_services
