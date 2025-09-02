@@ -81,7 +81,7 @@ body:
     attributes:
       label: macOS Version
       description: What version of macOS are you running?
-      placeholder: "e.g., macOS 15.0 Sequoia"
+      placeholder: "e.g., macOS 14.0 Sonoma"
     validations:
       required: true
 

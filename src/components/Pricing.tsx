@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { Check, Sparkles, ArrowRight, Shield, Clock, CreditCard } from 'lucide-react';
 
 const features = [
-  'All premium features unlocked',
   'Homebrew package management',
   'Real-time port monitoring',
   'Network tools & diagnostics',
   'AI-powered security analysis',
-  'Priority support',
+  'Docker Management',
   'Regular updates & new features',
   'Native SwiftUI performance',
   '100% local processing',
@@ -17,8 +16,8 @@ const features = [
 export default function Pricing() {
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>('annual');
   
-  const monthlyPrice = 14.99;
-  const annualPrice = 149;
+  const monthlyPrice = 9.99;
+  const annualPrice = 99.99;
   const annualMonthly = (annualPrice / 12).toFixed(2);
   const savings = ((monthlyPrice * 12 - annualPrice) / (monthlyPrice * 12) * 100).toFixed(0);
 
@@ -29,14 +28,14 @@ export default function Pricing() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
             <Sparkles className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium">7-Day Free Trial • No Credit Card Required</span>
+            <span className="text-sm font-medium">14-Day Free Trial • No Credit Card Required</span>
           </div>
           
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Simple, <span className="gradient-text">Transparent</span> Pricing
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Start with a 7-day free trial. Cancel anytime. All features included.
+            Start with a 14-days free trial. Cancel anytime. All features included.
           </p>
         </div>
 
@@ -101,7 +100,7 @@ export default function Pricing() {
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <div className="flex items-center gap-2 text-gray-400">
                     <Clock className="w-4 h-4" />
-                    <span>7-day free trial</span>
+                    <span>14-day free trial</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-400">
                     <CreditCard className="w-4 h-4" />

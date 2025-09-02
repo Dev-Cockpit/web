@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "What versions of macOS are supported?",
-    answer: "Dev Cockpit requires macOS 15.0 (Sequoia) or later. It's built with the latest SwiftUI technologies to ensure optimal performance and native macOS integration."
+    answer: "Dev Cockpit requires macOS 14.0 (Sonoma) or later. It's built with the latest SwiftUI technologies to ensure optimal performance and native macOS integration."
   },
   {
     question: "Can I use Dev Cockpit on multiple Macs?",

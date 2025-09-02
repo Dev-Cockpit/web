@@ -73,7 +73,7 @@ body:
     attributes:
       label: macOS Version
       description: What version of macOS are you running?
-      placeholder: "e.g., macOS 15.0 Sequoia"
+      placeholder: "e.g., macOS 14.0 Sonoma"
     validations:
       required: true
 
@@ -99,6 +99,6 @@ body:
       label: Pre-submission Checklist
       options:
         - label: I've checked the FAQ section
-        - label: I've verified I'm running macOS 15.0 or later
+        - label: I've verified I'm running macOS 14.0 or later
         - label: I've granted necessary permissions in System Settings
         - label: I've tried restarting the app
