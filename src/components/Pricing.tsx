@@ -82,15 +82,15 @@ export default function Pricing() {
                 <div className="mb-4">
                   {billingPeriod === 'monthly' ? (
                     <div>
-                      <span className="text-5xl font-bold">€{monthlyPrice}</span>
+                      <span className="text-5xl font-bold">${monthlyPrice}</span>
                       <span className="text-gray-400 ml-2">/month</span>
                     </div>
                   ) : (
                     <div>
-                      <span className="text-5xl font-bold">€{annualPrice}</span>
+                      <span className="text-5xl font-bold">${annualPrice}</span>
                       <span className="text-gray-400 ml-2">/year</span>
                       <div className="text-sm text-gray-500 mt-2">
-                        €{annualMonthly}/month when billed annually
+                        ${annualMonthly}/month when billed annually
                       </div>
                     </div>
                   )}

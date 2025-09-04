@@ -51,8 +51,8 @@ Multi-repository overview, branch status tracking, commit history visualization,
 ## Subscription Model
 
 Dev Cockpit is available as a subscription with secure payment processing through Paddle:
-- **Monthly**: €9.99/month
-- **Annual**: €99.99/year (save 17%)
+- **Monthly**: $9.99/month
+- **Annual**: $99.99/year (save 17%)
 
 All subscriptions include:
 - Full access to all features
