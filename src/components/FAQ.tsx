@@ -3,8 +3,8 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    question: "How does the 7-day free trial work?",
-    answer: "Start using Dev Cockpit immediately with full access to all features for 7 days. No credit card required. After the trial, you can choose to subscribe through the Mac App Store or the app will revert to view-only mode."
+    question: "How does the 14-day free trial work?",
+    answer: "Start using Dev Cockpit immediately with full access to all features for 14 days. No credit card required. After the trial, you can purchase a subscription through our secure checkout powered by Paddle."
   },
   {
     question: "Is Dev Cockpit really privacy-first?",
@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     question: "Can I use Dev Cockpit on multiple Macs?",
-    answer: "Yes! Your subscription through the Mac App Store allows you to use Dev Cockpit on all your Macs signed in with the same Apple ID."
+    answer: "Yes! Your subscription license allows you to use Dev Cockpit on all your Macs. Simply enter your license key on each device."
   },
   {
     question: "How do I cancel my subscription?",
-    answer: "You can cancel anytime through the Mac App Store subscription settings. You'll continue to have access until the end of your current billing period."
+    answer: "You can cancel anytime through your account portal or by contacting support. You'll continue to have access until the end of your current billing period."
   },
   {
     question: "Does Dev Cockpit require Homebrew to be installed?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "Can I get a refund?",
-    answer: "Refunds are handled through Apple's standard App Store refund policy. If you're not satisfied within the first few days of your subscription, you can request a refund through Apple."
+    answer: "We offer a 30-day money-back guarantee. If you're not satisfied within 30 days of purchase, contact support@devcockpit.app for a full refund."
   }
 ];
 

@@ -6,9 +6,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "blog:new": "node scripts/create-blog-post.js",
+    "blog:weekly": "node scripts/generate-weekly-content.js",
+    "blog:release": "node scripts/create-release-post.js"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.4",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "aos": "^2.3.4",

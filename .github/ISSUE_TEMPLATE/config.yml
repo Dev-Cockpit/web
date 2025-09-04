@@ -9,6 +9,6 @@ contact_links:
   - name: ❓ FAQ
     url: https://devcockpit.app/#faq
     about: Find answers to frequently asked questions
-  - name: 🍎 Mac App Store
-    url: https://apps.apple.com/app/dev-cockpit
-    about: Download or review Dev Cockpit on the App Store
+  - name: Download Dev Cockpit
+    url: https://devcockpit.app/download
+    about: Download Dev Cockpit for macOS

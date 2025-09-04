@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
-import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide-astro';
+import { Download, CheckCircle, Sparkles, Calendar, Shield, Key } from 'lucide-astro';
 ---
 
 <Layout 
-  title="Download Dev Cockpit - Mac App Store"
-  description="Download Dev Cockpit from the Mac App Store. Premium developer toolkit for macOS with 14-day free trial."
+  title="Download Dev Cockpit"
+  description="Download Dev Cockpit. Premium developer toolkit for macOS with 14-day free trial."
 >
   <main class="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
     <div class="max-w-6xl mx-auto">
@@ -26,17 +26,16 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
         <!-- Download Button -->
         <div class="flex flex-col items-center gap-4">
           <a 
-            href="#" 
-            class="inline-flex items-center gap-3 px-8 py-4 glass-card rounded-2xl hover:scale-105 transition-transform cursor-not-allowed opacity-75"
-            onclick="return false;"
+            href="https://github.com/devcockpit/releases/latest/download/DevCockpit.dmg" 
+            class="inline-flex items-center gap-3 px-8 py-4 glass-card rounded-2xl hover:scale-105 transition-transform"
           >
-            <Apple className="w-8 h-8" />
+            <Download className="w-8 h-8" />
             <div class="text-left">
-              <div class="text-xs text-gray-400">Download on the</div>
-              <div class="text-xl font-semibold">Mac App Store</div>
+              <div class="text-xs text-gray-400">Download for macOS</div>
+              <div class="text-sm font-semibold">Dev Cockpit.dmg</div>
             </div>
           </a>
-          <p class="text-sm text-gray-500">Available September 2025</p>
+          <p class="text-sm text-gray-500">14-day free trial • Then €9.99/month</p>
         </div>
       </div>
 
@@ -61,7 +60,7 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
             <div>
               <h3 class="text-xl font-semibold mb-2">Cancel Anytime</h3>
               <p class="text-gray-400">
-                Manage your subscription directly through the App Store. Cancel whenever you want.
+                Manage your subscription through your account portal. Cancel whenever you want.
               </p>
             </div>
           </div>
@@ -126,8 +125,8 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
               1
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-1">Open Mac App Store</h3>
-              <p class="text-gray-400">Launch the Mac App Store on your Mac</p>
+              <h3 class="text-lg font-semibold mb-1">Download Dev Cockpit</h3>
+              <p class="text-gray-400">Click the download button above to get the latest .dmg file</p>
             </div>
           </div>
           <div class="flex items-start gap-4">
@@ -135,8 +134,8 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
               2
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-1">Search for Dev Cockpit</h3>
-              <p class="text-gray-400">Type "Dev Cockpit" in the search bar</p>
+              <h3 class="text-lg font-semibold mb-1">Open the DMG file</h3>
+              <p class="text-gray-400">Double-click the downloaded file and drag Dev Cockpit to Applications</p>
             </div>
           </div>
           <div class="flex items-start gap-4">
@@ -144,8 +143,8 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
               3
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-1">Click Get or Install</h3>
-              <p class="text-gray-400">Download the app to your Mac</p>
+              <h3 class="text-lg font-semibold mb-1">Launch Dev Cockpit</h3>
+              <p class="text-gray-400">Open from Applications folder (you may need to right-click and select "Open" the first time)</p>
             </div>
           </div>
           <div class="flex items-start gap-4">
@@ -153,9 +152,40 @@ import { Download, Apple, CheckCircle, Sparkles, Calendar, Shield } from 'lucide
               4
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-1">Launch & Start Trial</h3>
-              <p class="text-gray-400">Open Dev Cockpit and begin your 14-day free trial</p>
+              <h3 class="text-lg font-semibold mb-1">Start Your Free Trial</h3>
+              <p class="text-gray-400">Enjoy 14 days of full access. Subscribe anytime to continue after trial</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- License Activation -->
+      <div class="glass rounded-3xl p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">After Purchase</h2>
+        <div class="flex items-start gap-4">
+          <div class="p-3 glass rounded-xl">
+            <Key className="w-6 h-6 text-primary-400" />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">License Activation</h3>
+            <p class="text-gray-400 mb-4">
+              After purchasing a subscription through Paddle, you'll receive a license key via email. 
+              Enter it in Dev Cockpit to activate your Pro features.
+            </p>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Instant activation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Use on all your Macs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Automatic updates</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

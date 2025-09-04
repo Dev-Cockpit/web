@@ -1,14 +1,12 @@
 # app-ads.txt for Dev Cockpit
-# Apple Search Ads Attribution
+# Direct Distribution - Not on App Store
 
-# Apple Inc.
-apple.com, 12345678, DIRECT
-
-# This file helps verify ownership of the Dev Cockpit app
-# for Apple Search Ads attribution and prevents ad fraud.
+# This application is distributed directly from our website
+# and uses Paddle for payment processing.
 # 
 # Bundle ID: com.caioricciuti.devcockpit
-# App Store ID: [TO BE FILLED AFTER APP STORE SUBMISSION]
+# Distribution: Direct Download
+# Payment Processor: Paddle
 #
-# For more information, visit:
-# https://developer.apple.com/documentation/ad_services
+# For support, visit:
+# https://devcockpit.app/support

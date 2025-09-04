@@ -126,19 +126,22 @@ export default function Pricing() {
               </div>
 
               {/* CTA */}
-              <a
-                href="#"
+              <button
+                onClick={() => {
+                  // Paddle checkout will be integrated here
+                  window.location.href = '/download';
+                }}
                 className="group relative w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white gradient-primary rounded-xl hover:scale-105 transition-all duration-200 glow"
               >
                 <span>Start Free Trial</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 <div className="absolute inset-0 gradient-primary rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
-              </a>
+              </button>
 
               {/* Additional info */}
               <p className="text-center text-sm text-gray-500 mt-6">
-                Available on Mac App Store from September 2025<br />
-                Subscription managed through Apple
+                Available from September 2025<br />
+                Secure payment through Paddle
               </p>
             </div>
           </div>

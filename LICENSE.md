@@ -10,12 +10,12 @@ This is proprietary commercial software. This software and associated documentat
 
 ## LICENSE GRANT
 
-This Software is licensed, not sold. Upon purchase of a valid subscription through the Apple App Store, Dev Cockpit grants you a limited, non-exclusive, non-transferable, revocable license to use the Software subject to the following terms:
+This Software is licensed, not sold. Upon purchase of a valid subscription through our payment processor Paddle, Dev Cockpit grants you a limited, non-exclusive, non-transferable, revocable license to use the Software subject to the following terms:
 
 ### Permitted Use
 - You may install and use the Software on any number of devices that you own or control
 - You may use the Software for personal or internal business purposes
-- Your license is tied to your Apple ID and subscription status
+- Your license is tied to your license key and subscription status
 
 ### Restrictions
 You may NOT:
@@ -30,7 +30,7 @@ You may NOT:
 
 ## SUBSCRIPTION REQUIRED
 
-The Software requires an active subscription purchased through the Apple App Store. The Software will cease to function if:
+The Software requires an active subscription purchased through Paddle. The Software will cease to function if:
 - Your subscription expires
 - Your subscription is cancelled
 - Payment fails

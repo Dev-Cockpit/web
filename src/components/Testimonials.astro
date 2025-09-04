@@ -1,112 +1,71 @@
 ---
-import { Star, Quote } from 'lucide-astro';
+import { Star, Users, Rocket } from 'lucide-astro';
 
-const testimonials = [
-  {
-    name: "Alex Chen",
-    role: "Senior iOS Developer",
-    company: "TechCorp",
-    avatar: "/images/avatars/avatar-1.jpg",
-    content: "Dev Cockpit transformed how I manage my development environment. The Homebrew visualization alone saved me hours of debugging dependency issues.",
-    rating: 5
-  },
-  {
-    name: "Sarah Johnson",
-    role: "Full Stack Engineer",
-    company: "StartupHub",
-    avatar: "/images/avatars/avatar-2.jpg",
-    content: "Finally, a native macOS tool that respects privacy while providing enterprise-level monitoring. The AI insights are incredibly helpful for security audits.",
-    rating: 5
-  },
-  {
-    name: "Mike Rodriguez",
-    role: "DevOps Lead",
-    company: "CloudScale",
-    avatar: "/images/avatars/avatar-3.jpg",
-    content: "The port monitoring feature is a game-changer. I can instantly see what's running, identify conflicts, and the AI even suggests security improvements.",
-    rating: 5
-  },
-  {
-    name: "Emma Watson",
-    role: "Backend Developer",
-    company: "DataFlow",
-    avatar: "/images/avatars/avatar-4.jpg",
-    content: "Beautiful UI, blazing fast performance, and actually useful features. This is what developer tools should be like. Worth every penny.",
-    rating: 5
-  },
-  {
-    name: "David Kim",
-    role: "Security Engineer",
-    company: "SecureNet",
-    avatar: "/images/avatars/avatar-5.jpg",
-    content: "The security analysis features are top-notch. Having Apple Intelligence analyze my ports and processes locally gives me peace of mind.",
-    rating: 5
-  },
-  {
-    name: "Lisa Zhang",
-    role: "Mobile Developer",
-    company: "AppStudio",
-    avatar: "/images/avatars/avatar-6.jpg",
-    content: "Dev Cockpit is now an essential part of my workflow. The network tools help me debug API issues faster than ever before.",
-    rating: 5
-  }
-];
+// Placeholder until we have real testimonials
+const showTestimonials = false;
+const testimonials = [];
 ---
 
 <section id="testimonials" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-primary-950/20">
   <div class="max-w-7xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-        Loved by <span class="gradient-text">Developers</span> Worldwide
-      </h2>
-      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-        Join thousands of developers who've upgraded their macOS development experience
-      </p>
-    </div>
-
-    <!-- Testimonials Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {testimonials.map((testimonial) => (
-        <div class="glass rounded-2xl p-6 relative group hover:scale-105 transition-all duration-300">
-          <!-- Quote Icon -->
-          <Quote className="absolute top-4 right-4 w-8 h-8 text-primary-500/20" />
-          
-          <!-- Rating -->
-          <div class="flex gap-1 mb-4">
-            {[...Array(testimonial.rating)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            ))}
-          </div>
-          
-          <!-- Content -->
-          <p class="text-gray-300 mb-6 relative z-10">"{testimonial.content}"</p>
-          
-          <!-- Author -->
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-purple-500 flex items-center justify-center text-white font-bold">
-              {testimonial.name.split(' ').map(n => n[0]).join('')}
-            </div>
-            <div>
-              <div class="font-semibold">{testimonial.name}</div>
-              <div class="text-sm text-gray-500">
-                {testimonial.role} at {testimonial.company}
-              </div>
-            </div>
-          </div>
+    {showTestimonials ? (
+      <>
+        <!-- Will show real testimonials when available -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+            Loved by <span class="gradient-text">Developers</span> Worldwide
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Join thousands of developers who've upgraded their macOS development experience
+          </p>
         </div>
-      ))}
-    </div>
-
-    <!-- CTA -->
-    <div class="text-center mt-12">
-      <p class="text-gray-400 mb-6">Ready to join them?</p>
-      <a 
-        href="#pricing" 
-        class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold gradient-primary rounded-xl hover:scale-105 transition-all duration-200 glow"
-      >
-        Start Your Free Trial
-      </a>
-    </div>
+      </>
+    ) : (
+      <!-- Beta Program CTA -->
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm text-primary-400 mb-6">
+          <Rocket className="w-4 h-4" />
+          <span>Join Our Beta Program</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+          Be Among the <span class="gradient-text">First</span>
+        </h2>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+          Dev Cockpit is launching soon! Join our beta program to get early access and help shape the future of macOS development tools.
+        </p>
+        
+        <div class="glass rounded-2xl p-8 max-w-2xl mx-auto">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <Users className="w-12 h-12 text-primary-400" />
+            <div class="text-left">
+              <div class="text-3xl font-bold">500+</div>
+              <div class="text-gray-400">Beta testers waiting</div>
+            </div>
+          </div>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center gap-3">
+              <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              <span class="text-gray-300">Early access to all features</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              <span class="text-gray-300">50% discount on launch</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              <span class="text-gray-300">Direct feedback channel with developers</span>
+            </div>
+          </div>
+          
+          <a 
+            href="/download" 
+            class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold gradient-primary rounded-xl hover:scale-105 transition-all duration-200 glow"
+          >
+            Request Beta Access
+          </a>
+        </div>
+      </div>
+    )}
   </div>
 </section>

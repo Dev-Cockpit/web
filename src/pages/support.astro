@@ -139,14 +139,14 @@ const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY;
           <div>
             <h3 class="font-semibold mb-2">App won't launch</h3>
             <p class="text-gray-400 mb-4">
-              Make sure you're running macOS 14.0 or later. Try restarting your Mac and reinstalling the app from the Mac App Store.
+              Make sure you're running macOS 14.0 or later on an Apple Silicon Mac. Try restarting your Mac and downloading the latest version from our website.
             </p>
           </div>
           
           <div>
-            <h3 class="font-semibold mb-2">Subscription not recognized</h3>
+            <h3 class="font-semibold mb-2">License not recognized</h3>
             <p class="text-gray-400 mb-4">
-              Go to Settings → Restore Purchases. Make sure you're signed in with the same Apple ID used for purchase.
+              Go to Settings → License and re-enter your license key. Make sure you're using the exact key from your Paddle purchase email.
             </p>
           </div>
           
@@ -170,22 +170,25 @@ const resendApiKey = import.meta.env.PUBLIC_RESEND_API_KEY;
       <div class="mt-12 text-center p-8 glass rounded-2xl">
         <h2 class="text-2xl font-semibold mb-4">Need to Cancel?</h2>
         <p class="text-gray-400 mb-6">
-          We're sorry to see you go. You can cancel your subscription anytime through the Mac App Store.
+          We're sorry to see you go. You can manage your subscription anytime through your account portal.
         </p>
         <div class="inline-flex flex-col sm:flex-row gap-4 text-sm">
           <div class="glass rounded-xl px-4 py-2">
-            1. Open Mac App Store
+            1. Visit your account portal
           </div>
           <div class="glass rounded-xl px-4 py-2">
-            2. Click your profile
+            2. Click "Manage Subscription"
           </div>
           <div class="glass rounded-xl px-4 py-2">
-            3. Manage Subscriptions
+            3. Select "Cancel Subscription"
           </div>
           <div class="glass rounded-xl px-4 py-2">
-            4. Cancel Dev Cockpit
+            4. Confirm cancellation
           </div>
         </div>
+        <p class="text-sm text-gray-500 mt-4">
+          Or email us at <a href="mailto:support@devcockpit.app" class="text-primary-400 hover:text-primary-300">support@devcockpit.app</a> and we'll help you cancel.
+        </p>
       </div>
     </div>
   </main>
